@@ -6,11 +6,14 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;600;800&family=Rancho&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./public/styles/css/style.css">
-  <title>Vite App</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;600;800&family=Rancho&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="/js/index.js" defer></script>
+  <link rel="stylesheet" href="/styles/css/style.css">
+  <title>Invitaciones Digitales</title>
+  <meta name="description" content="Invitaciones digitales para cualquier evento.">
+  <meta name="keywords" content="Invitaciones digitales, Invitaciones virtuales, Invitaciones Bucaramanga, Invitaciones, Tarjetas de invitación, Tarjetas digitales, Tarjetas">
 </head>
 
 <body>
@@ -18,7 +21,7 @@
   <header class="header">
     <nav>
       <figure>
-        <img src="./public/assets/img/logo.png" alt="logo">
+        <img src="/assets/img/logo.png" alt="logo">
       </figure>
       <ul>
         <li>Inicio</li>
@@ -56,196 +59,154 @@
       <div class="mockup-phone">
         <div class="preview">
           <div class="preview__div">
-            <img src="./public/assets/img/mockPhone.png">
-            <iframe src="https://brayanyliseth.com/" class="bio-mp-screen"></iframe>
+            <img src="/assets/img/mockPhone.png">
+            <iframe src="https://brayanyliseth.com/" class="bio-mp-screen" id="iframe"></iframe>
           </div>
         </div>
       </div>
     </section>
   </header>
-  
-  <div class="bubbles">
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-    <svg class="bubble" viewBox="0 0 636.000000 1280.000000">
-      <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-        <path d="M2794 12010 c-272 -36 -658 -196 -913 -379 -597 -429 -966 -1123
-      -1020 -1923 -20 -292 36 -667 150 -1010 166 -494 503 -1085 983 -1723 294
-      -392 667 -740 882 -824 84 -34 89 -49 40 -136 -21 -38 -72 -121 -112 -184 -41
-      -63 -74 -123 -74 -134 0 -17 5 -19 38 -13 26 4 45 1 58 -9 10 -8 34 -15 52
-      -15 18 0 43 -5 54 -11 11 -6 41 -14 67 -18 33 -5 45 -11 43 -22 -17 -71 -21
-      -548 -21 -2429 0 -2219 0 -2236 36 -2247 38 -13 38 -45 43 2332 3 1260 9 2299
-      14 2311 l8 21 76 -19 c139 -34 127 -35 171 10 22 22 80 62 130 88 50 27 91 54
-      91 60 0 11 -17 34 -118 159 -103 127 -143 191 -134 214 4 12 39 36 87 60 239
-      117 508 381 848 834 275 365 538 783 721 1147 157 313 269 608 312 820 45 226
-      57 344 57 555 -2 519 -73 852 -263 1231 -136 269 -274 459 -481 659 -335 323
-      -754 534 -1175 590 -118 16 -541 19 -650 5z" />
-      </g>
-    </svg>
-  </div>
+
+  <main class="slider">
+    <div class="container">
+      <div id="slide">
+          <div class="item" style="background-image: url(/assets/img/slider_1.jpg);">
+              <div class="content">
+                  <h3 class="name">Matrimonio</h3>
+                  <h4 class="des">Tarjetas de invitación digital para boda con excelentes diseños y animaciones.</h4>
+              </div>
+          </div>
+          <div class="item" style="background-image: url(/assets/img/slider_2.jpg);">
+              <div class="content">
+                  <h3 class="name">15 Años</h3>
+                  <h4 class="des">Tarjeta de invitación para fiesta de 15 años digital.</h4>
+              </div>
+          </div>
+          <div class="item" style="background-image: url(/assets/img/slider_3.jpg);">
+              <div class="content">
+                  <h3 class="name">Empresarial</h3>
+                  <h4 class="des">Diseño de tarjetas de invitación digital para empresas enfocados en su necesidad.</h4>
+              </div>
+          </div>
+          <div class="item" style="background-image: url(/assets/img/slider_4.jpg);">
+              <div class="content">
+                  <h3 class="name">Primera Comunión</h3>
+                  <h4 class="des">Tarjeta de invitación digital para tu primera comunión, excelentes diseños digitales</h4>
+              </div>
+          </div>
+          <div class="item" style="background-image: url(/assets/img/slider_5.jpg);">
+              <div class="content">
+                  <h3 class="name">Baby Shower</h3>
+                  <h4 class="des">Tarjetas de invitación digital para Baby Shower con un diseño perfecto para bebes.</h4>
+              </div>
+          </div>
+          <div class="item" style="background-image: url(/assets/img/slider_6.jpg);">
+              <div class="content">
+                  <h3 class="name">Graduacion</h3>
+                  <h4 class="des">Tarjetas de invitación digital para Ceremonias de Graduación.</h4>
+              </div>
+          </div>
+      </div>
+      <div class="buttons">
+          <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+          <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+  </main>
+
+  <section class="nosotros">
+    <article class="info">
+      <span>Tarjetas de invitación Web</span>
+      <h2>Nuestros Servicios</h2>
+      <p>A continuación encontraras los 3 paquetes que manejamos en cada diseño para que tengas la oportunidad de elegir a tu gusto</p>
+    </article>
+    <section class="offer">
+      <div class="offer__card">
+        <div class="top">
+          <span>Basico</span>
+          <figure>
+            <img src="assets/img/mockup.jpg" alt="mockup">
+          </figure>
+        </div>
+        <div class="bot">
+          <span>
+            Caracteristicas
+            <i class="fa-solid fa-circle-plus"></i>
+          </span>
+          <ul>
+            <li>Logotipo</li>
+            <li>Cuenta Regresiva</li>
+            <li>Confirmación de Asistencia</li>
+            <li>Código de vestimenta</li>
+            <li>Galeria 10 fotos</li>
+            <li>Itinerario</li>
+            <li>Link Maps</li>
+            <li>Mesa de regalos</li>
+          </ul>
+        </div>
+      </div>
+      <div class="offer__card">
+        <div class="top">
+          <span>Estandar</span>
+          <figure>
+            <img src="assets/img/mockup.jpg" alt="mockup">
+          </figure>
+        </div>
+        <div class="bot">
+          <span>
+            Caracteristicas
+            <i class="fa-solid fa-circle-plus"></i>
+          </span>
+          <ul>
+            <li>Logotipo</li>
+            <li>Cuenta Regresiva</li>
+            <li>Confirmación de Asistencia</li>
+            <li>Código de vestimenta</li>
+            <li>Galeria 20 fotos</li>
+            <li>Itinerario</li>
+            <li>Link Maps</li>
+            <li>Mesa de regalos</li>
+            <li>Play list / Música</li>
+            <li>Pases Vía WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+      <div class="offer__card">
+        <div class="top">
+          <span>Avanzado</span>
+          <figure>
+            <img src="assets/img/mockup.jpg" alt="mockup">
+          </figure>
+        </div>
+        <div class="bot">
+          <span>
+            Caracteristicas
+            <i class="fa-solid fa-circle-plus"></i>
+          </span>
+          <ul>
+            <li>Logotipo</li>
+            <li>Cuenta Regresiva</li>
+            <li>Confirmación de Asistencia</li>
+            <li>Código de vestimenta</li>
+            <li>Galeria 10 fotos</li>
+            <li>Itinerario</li>
+            <li>Link Maps</li>
+            <li>Mesa de regalos</li>
+            <li>Play list Spotify</li>
+            <li>Pases Vía WhatsApp</li>
+            <li>Codigo QR</li>
+            <li>Hospedaje (Opcional)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </section>
 </body>
 
 </html>
+
+<!-- 
+<section>
+  <div>Quienes Somos</div>
+  <div>Somos una empresa líder en diseño y desarrollo de invitaciones digitales para bodas, fiestas de 15, comuniones, cumpleaños, eventos empresariales, entre otros. Nuestro equipo creativo y tecnológico se esfuerza por capturar la esencia de tus momentos especiales y crear invitaciones únicas y memorables. Ofrecemos una amplia gama de diseños elegantes y temáticos, personalización completa, y experiencias interactivas para tus invitados. Únete a nosotros y déjanos hacer la invitacion digital de tus sueños.</div>
+</section> -->
