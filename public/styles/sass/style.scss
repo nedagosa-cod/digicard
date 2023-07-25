@@ -1,0 +1,449 @@
+@use 'variables' as *;
+@use 'reset';
+
+
+.bubbles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+    svg{
+        &:nth-child(1) {
+            left: 4%;
+            animation: leafallin 15s linear infinite;
+            animation-delay: -7s;
+            g {
+                fill: $secondary;
+            }
+        }
+
+        &:nth-child(2) {
+            left: 9%;
+            animation: leafallin 20s linear infinite;
+            animation-delay: -5s;
+            g {
+                fill: $primary;
+            }
+        }
+
+        &:nth-child(3) {
+            left: 15%;
+            animation: leafallin 20s linear infinite;
+            animation-delay: 0s;
+            g {
+                fill: $terciary;
+            }
+        }
+
+        &:nth-child(4) {
+            left: 85%;
+            animation: leafallin 15s linear infinite;
+            animation-delay: -5s;
+            g {
+                fill: $primary-b;
+            }
+        }
+
+        &:nth-child(5) {
+            left: 93%;
+            animation: leafallin 12s linear infinite;
+            animation-delay: -7s;
+            g {
+                fill: $secondary-b;
+            }
+        }
+
+        &:nth-child(6) {
+            left: 98%;
+            animation: leafallin 20s linear infinite;
+            animation-delay: -1s;
+            g {
+                fill: $terciary;
+            }
+        }
+
+        &:nth-child(7) {
+            left: 100%;
+            animation: leafallin 17s linear infinite;
+            animation-delay: -4s;
+            g {
+                fill: $primary;
+            }
+        }
+
+        &:nth-child(8) {
+            left: 12%;
+            animation: leafallin 12s linear infinite;
+            animation-delay: -7s;
+            g {
+                fill: $secondary-b;
+            }
+        }
+
+        &:nth-child(9) {
+            left: 0%;
+            animation: leafallin 22s linear infinite;
+            animation-delay: -3s;
+            g {
+                fill: $terciary;
+            }
+        }
+
+        &:nth-child(10) {
+            left: 88%;
+            animation: leafallin 22s linear infinite;
+            animation-delay: -3s;
+            g {
+                fill: $primary;
+            }
+        }
+
+        &:nth-child(11) {
+            left: 97%;
+            animation: leafallin 15s linear infinite;
+            animation-delay: -7s;
+            g {
+                fill: $secondary;
+            }
+        }
+
+        &:nth-child(12) {
+            left: 99%;
+            animation: leafallin 24s linear infinite;
+            animation-delay: -1s;
+            -webkit-animation: leafallin 24s linear infinite;
+            g {
+                fill: $terciary;
+            }
+}
+    }
+
+    .bubble {
+        position: absolute;
+        display: block;
+        height: 80px;
+        width: 80px;
+    }
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    font-size: 1.8rem;
+    background-image: url(../../assets/img/header.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    figure {
+        width: 100px;
+        margin: 4px 16px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 2.2rem;
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px 0;
+        color: $white;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        max-width: 700px;
+        font-size: 6rem;
+        h1 {
+            font-size: 10rem;
+            font-weight: 700;
+            text-shadow: 0 0 4px $white;
+        }
+        h2 {
+            padding:  16px 0;
+            border-bottom: 2px inset $secondary;
+        }
+        span {
+            font-size: 4rem;
+            margin: 40px 0;
+        }
+    }
+}
+
+.mockup-phone {
+    position: relative;
+    .preview {
+        width: 360px;
+        height: 663.77px;
+        overflow: hidden;
+        transform-origin: 0px 0px 0px;
+
+        &__div {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            width: 557px;
+            height: 1027px;
+            background: none;
+            transform-origin: 0px 0px 0px;
+            transform: scale(0.64632);
+            img {
+                position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;z-index: 2;
+            }
+            .bio-mp-screen {
+                position: absolute; 
+                top: 143px; 
+                left: 89.5px; 
+                width: 390px; 
+                height: 760px; 
+                border: 0px;
+            }
+        }
+    }
+}
+
+// .bio-mp-screen::-webkit-scrollbar {
+//     width: 6px;
+//     height: 6px;
+//   }
+
+//   .bio-mp-screen::-webkit-scrollbar-track {
+//     background: none;
+//     -webkit-border-radius: 10px;
+//     border-radius: 10px;
+//   }
+
+//   .bio-mp-screen::-webkit-scrollbar-thumb {
+//     -webkit-border-radius: 10px;
+//     border-radius: 10px;
+//     background: #777;
+//   }
+
+//   .bio-mp-screen::-webkit-scrollbar-thumb:window-inactive {
+//     background: #777;
+//   }
+
+
+
+.button {
+    position: relative;
+    padding: 16px 35px;
+    background: $secondary;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: $white;
+    border: 3px solid $secondary-b;
+    border-radius: 8px;
+    box-shadow: 0 0 0 $secondary-b;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all .8s ease;
+  }
+  
+  .button:hover {
+    color: $primary-b;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  .button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #FFFDEF
+  }
+
+@keyframes leafallin {
+    0% {
+        opacity: 0;
+        top: 50%;
+        transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        -o-transform: translateX(20px);
+}
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        -o-transform: translateX(20px);
+}
+
+    40% {
+        transform: translateX(20px);
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        -o-transform: translateX(20px);
+}
+
+    60% {
+        transform: translateX(-20px);
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        -o-transform: translateX(-20px);
+}
+
+    80% {
+        transform: translateX(20px);
+        -webkit-transform: translateX(-20px);
+        -moz-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        -o-transform: translateX(-20px);
+}
+
+    100% {
+        top: -10%;
+        transform: translateX(20px);
+        opacity: 0;
+        -webkit-transform: translateX(20px);
+        -moz-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        -o-transform: translateX(20px);
+}
+}
