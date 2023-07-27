@@ -395,11 +395,14 @@ svg {
   position: relative;
   overflow: hidden;
 }
-.slider h1 {
+.slider h2 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 6rem;
   margin: 20px auto;
   width: 100%;
+}
+.slider p {
+  font-size: 2rem;
 }
 .slider__link-img {
   width: 100%;
@@ -492,6 +495,7 @@ svg {
   flex-direction: column;
   width: 100%;
   background: #bebebe;
+  padding: 40px 0;
 }
 .nosotros .bot {
   display: flex;
@@ -525,12 +529,115 @@ svg {
   margin: 40px auto;
 }
 
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #bebebe;
+  width: 100%;
+}
+.contacto .orange {
+  color: #ff7a01;
+}
+.contacto .form-container {
+  width: 600px;
+  min-width: 300px;
+  margin: 30px;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 3px 3px 0 2px #ffbc42;
+  border: 2px solid #d81159;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+.contacto .heading {
+  display: block;
+  color: #d81159;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.contacto .form-container .form .input {
+  color: #292c35;
+  font-size: 2rem;
+  width: 100%;
+  background-color: #ffbc42;
+  border: none;
+  outline: none;
+  padding: 14px 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+.contacto .form-container .form .input:focus {
+  border-left: 5px solid #d81159;
+}
+.contacto .form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #ffbc42;
+  color: #292c35;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.contacto .form-container .form .textarea:focus {
+  border-left: 5px solid #d81159;
+}
+.contacto .form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+.contacto .form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #d81159;
+  padding: 10px;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+.contacto .form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid #ff7a01;
+  color: #ff7a01;
+}
+.contacto .form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #ff7a01);
+  flex-basis: 30%;
+}
+.contacto .form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  color: #292c35;
+  font-weight: bold;
+  background: #ffbc42;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+.contacto .form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #ff7a01;
+  color: #001925;
+}
+
 .amenidades {
   width: 100%;
 }
 .amenidades__box {
   width: 80%;
-  margin: auto;
+  margin: 60px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
