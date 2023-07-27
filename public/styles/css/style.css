@@ -339,6 +339,11 @@ svg {
   -webkit-filter: drop-shadow(1px 1px 0 #d81159);
 }
 
+.-open {
+  width: 100%;
+  height: 100vh;
+}
+
 .mockup-phone {
   position: relative;
 }
@@ -380,21 +385,45 @@ svg {
 
 .slider {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
   font-size: 2rem;
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: hidden;
   position: relative;
+  overflow: hidden;
+}
+.slider h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 20px auto;
+  width: 100%;
+}
+.slider__link-img {
+  width: 100%;
+}
+.slider__link-img figure {
+  width: 100%;
+}
+.slider__box {
+  width: 90%;
+  position: relative;
+}
+.slider__box figure {
+  margin: 40px auto;
+  position: relative;
+  z-index: 9;
+  pointer-events: none;
 }
 
-.nosotros {
+.servicios {
   width: 100%;
-  background: rgba(128, 128, 128, 0.333);
+  background: #bebebe;
   font-size: 2rem;
 }
-.nosotros .info {
+.servicios .info {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -402,72 +431,179 @@ svg {
   width: 100%;
   padding: 40px 10px;
 }
-.nosotros .info span {
+.servicios .info span {
   font-size: 3.2rem;
 }
-.nosotros .info h2 {
+.servicios .info h2 {
   font-size: 6rem;
   margin: 20px auto;
 }
-.nosotros .info p {
+.servicios .info p {
   margin: auto;
   font-size: 2rem;
   width: 50%;
 }
-.nosotros .offer {
+.servicios .offer {
   display: flex;
   justify-content: center;
   gap: 20px;
   width: 100%;
 }
-.nosotros .offer__card {
+.servicios .offer__card {
   width: 20%;
   background: #fff;
   padding: 24px 0;
   margin: 20px 0;
   height: max-content;
 }
-.nosotros .offer__card .top {
+.servicios .offer__card .top {
   width: 100%;
   text-align: center;
   padding: 16px;
 }
-.nosotros .offer__card .top span {
+.servicios .offer__card .top span {
   display: block;
   font-size: 3rem;
   text-align: center;
 }
-.nosotros .offer__card .bot {
+.servicios .offer__card .bot {
   border-bottom: 1px solid #218380;
   border-top: 1px solid #218380;
   margin: 0 10px;
   padding: 10px 0;
 }
-.nosotros .offer__card .bot span {
+.servicios .offer__card .bot span {
   display: flex;
   justify-content: space-between;
   margin: 10px;
   color: #B0B0B4;
 }
-.nosotros .offer__card .bot ul {
+.servicios .offer__card .bot ul {
   text-align: center;
 }
-.nosotros .offer__card .bot ul li {
+.servicios .offer__card .bot ul li {
   border-bottom: 1px solid #73d2de;
   padding: 10px 0;
   margin: 0 14px;
 }
 
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #bebebe;
+}
+.nosotros .bot {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.nosotros .bot .left {
+  width: 50%;
+  border-right: 1px solid #8f2d56;
+}
+.nosotros .bot .left figure {
+  width: 100%;
+}
+.nosotros .bot .right {
+  width: 50%;
+  padding: 0 20px;
+}
+.nosotros .bot .right h3 {
+  font-size: 2.4rem;
+}
+.nosotros .bot .right h2 {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+.nosotros .bot .right p {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+.nosotros .bot .right figure {
+  width: 400px;
+  margin: 40px auto;
+}
+
+.amenidades {
+  width: 100%;
+}
+.amenidades__box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2rem;
+}
+.amenidades__box .div {
+  display: flex;
+  justify-content: center;
+  box-shadow: 4px 4px #ffbc42;
+  border: 2px solid #d81159;
+  border-radius: 5px;
+  max-width: 30%;
+  min-width: 200px;
+  padding: 6px 4px;
+  background: #f9feff;
+}
+.amenidades__box .div .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amenidades__box .div .top figure {
+  margin: 4px;
+  width: 90px;
+}
+.amenidades__box .div .bot {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.amenidades__box .div .bot h3 {
+  color: #d81159;
+  font-size: 2.2rem;
+}
+.amenidades__box .div .bot hr {
+  width: 50%;
+  margin: 4px 0 8px 0;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.amenidades__box .div1 {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 20px 0;
+}
+.amenidades__box .div1 h2 {
+  font-size: 6rem;
+  text-align: center;
+}
+.amenidades__box .div1 p {
+  width: 40ch;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 2.4rem;
+}
+.amenidades__link-img {
+  width: 100%;
+}
+.amenidades__link-img figure {
+  width: 100%;
+}
+
 .button {
   position: relative;
   padding: 16px 35px;
-  background: #218380;
+  background: #fff;
   font-size: 2.4rem;
   font-weight: 500;
-  color: #fff;
-  border: 3px solid #73d2de;
+  color: #d81159;
   border-radius: 8px;
-  box-shadow: 0 0 0 #73d2de;
+  box-shadow: 2px 3px 0 2px #d81159;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -498,7 +634,7 @@ svg {
   position: absolute;
   top: 40%;
   left: 40%;
-  width: 5px;
+  width: 10px;
   height: auto;
   filter: drop-shadow(0 0 0 #fffdef);
   z-index: -5;
@@ -539,7 +675,7 @@ svg {
 }
 
 .button:hover {
-  color: #ffbc42;
+  color: #8f2d56;
   box-shadow: 0 0 25px rgba(254, 193, 149, 0.5490196078);
 }
 
@@ -551,6 +687,7 @@ svg {
   height: auto;
   filter: drop-shadow(0 0 10px #fffdef);
   z-index: 2;
+  -webkit-filter: drop-shadow(0 0 10px #fffdef);
 }
 
 .button:hover .star-2 {
@@ -610,13 +747,18 @@ svg {
 .container {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 48%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  overflow: hidden;
   padding: 50px;
   background-color: #f5f5f5;
   box-shadow: 0 30px 50px #dbdbdb;
+  aspect-ratio: 16/9;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 #slide {
@@ -710,7 +852,7 @@ svg {
   display: flex;
   gap: 5px;
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   z-index: 222222;
   text-align: center;
   width: 100%;
@@ -790,6 +932,11 @@ svg {
     opacity: 1;
     transform: translate(0, 0);
     filter: blur(0);
+  }
+}
+@media screen and (max-width: 1366px) {
+  .amenidades__box .div {
+    flex-direction: column;
   }
 }
 
