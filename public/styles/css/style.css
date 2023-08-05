@@ -346,6 +346,7 @@ svg {
 
 .mockup-phone {
   position: relative;
+  width: 30%;
 }
 .mockup-phone .preview {
   width: 360px;
@@ -354,9 +355,6 @@ svg {
   transform-origin: 0px 0px 0px;
 }
 .mockup-phone .preview__div {
-  position: relative;
-  top: 0px;
-  left: 0px;
   width: 557px;
   height: 1027px;
   background: none;
@@ -365,8 +363,6 @@ svg {
 }
 .mockup-phone .preview__div img {
   position: absolute;
-  top: 0px;
-  left: 0px;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -374,10 +370,10 @@ svg {
 }
 .mockup-phone .preview__div .bio-mp-screen {
   position: absolute;
-  top: 139px;
+  top: 132px;
   left: 88px;
   width: 390px;
-  height: 765px;
+  height: 768px;
   border: 0px;
   border-radius: 24px;
   -webkit-border-radius: 59px;
