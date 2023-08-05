@@ -152,6 +152,93 @@ svg {
     width: initial;
   } */
 /* Configuramos la tipografía para toda la web */
+@media only screen and (max-width: 768px) {
+  .page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: "Arvo", serif;
+  }
+  .page_404 img {
+    width: 100%;
+  }
+  .page_404 .container {
+    width: 100%;
+    height: 100%;
+  }
+  .page_404 .four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    width: 100%;
+    background-position: center;
+  }
+  .page_404 .four_zero_four_bg h1 {
+    font-size: 80px;
+  }
+  .page_404 .four_zero_four_bg h3 {
+    font-size: 80px;
+  }
+  .page_404 .link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+    margin-top: 1px;
+  }
+  .page_404 .contant_box_404 {
+    display: flex;
+    flex-direction: column;
+  }
+  .page_404 .contant_box_404 h3 {
+    display: block;
+    font-size: 4rem;
+  }
+  .page_404 .contant_box_404 p {
+    display: block;
+    font-size: 3rem;
+  }
+  .page_404 .contant_box_404 a {
+    display: block;
+    font-size: 3rem;
+  }
+}
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: "Arvo", serif;
+  height: 100vh;
+}
+.page_404 img {
+  width: 100%;
+}
+.page_404 .four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+.page_404 .four_zero_four_bg h1 {
+  font-size: 80px;
+}
+.page_404 .four_zero_four_bg h3 {
+  font-size: 80px;
+}
+.page_404 .link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+}
+.page_404 .contant_box_404 h3 {
+  font-size: 4rem;
+}
+.page_404 .contant_box_404 p {
+  font-size: 3rem;
+}
+.page_404 .contant_box_404 a {
+  font-size: 3rem;
+  margin: 6px auto;
+}
+
 .bubbles {
   position: fixed;
   width: 100%;

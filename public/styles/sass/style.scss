@@ -1,5 +1,56 @@
 @use 'variables' as *;
 @use 'reset';
+@use 'mobile';
+
+
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: "Arvo", serif;
+    height: 100vh;
+    img {
+        width: 100%;
+    }
+
+    .four_zero_four_bg {
+        background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+        height: 400px;
+        background-position: center;
+
+        h1 {
+            font-size: 80px;
+        }
+
+        h3 {
+            font-size: 80px;
+        }
+    }
+
+    .link_404 {
+        color: #fff !important;
+        padding: 10px 20px;
+        background: #39ac31;
+        margin: 20px 0;
+        display: inline-block;
+        // margin-top: -50px;
+    }
+    .contant_box_404 {
+        h3 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 3rem;
+        }
+
+        a {
+            font-size: 3rem;
+            margin: 6px auto;
+        }
+    }
+}
+
+
 
 
 .bubbles {
@@ -284,24 +335,30 @@
     overflow: hidden;
     position: relative;
     overflow: hidden;
+
     h2 {
         text-align: center;
         font-size: 6rem;
         margin: 20px auto;
         width: 100%;
     }
+
     p {
         font-size: 2rem;
     }
+
     &__link-img {
         width: 100%;
+
         figure {
             width: 100%;
         }
     }
+
     &__box {
         width: 90%;
         position: relative;
+
         figure {
             margin: 40px auto;
             position: relative;
@@ -315,6 +372,7 @@
     width: 100%;
     background: #bebebe;
     font-size: 2rem;
+
     .info {
         display: flex;
         flex-direction: column;
@@ -397,6 +455,7 @@
     width: 100%;
     background: #bebebe;
     padding: 40px 0;
+
     .bot {
         display: flex;
         width: 80%;
@@ -445,12 +504,12 @@
     align-items: center;
     background: #bebebe;
     width: 100%;
-    
+
     .orange {
         color: #ff7a01;
-      }
-      
-      .form-container {
+    }
+
+    .form-container {
         width: 600px;
         min-width: 300px;
         margin: 30px;
@@ -459,22 +518,22 @@
         box-shadow: 3px 3px 0 2px $primary-b;
         border: 2px solid $primary;
         //clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
-        border-radius: 40px ;
-        -webkit-border-radius: 40px ;
-        -moz-border-radius: 40px ;
-        -ms-border-radius: 40px ;
-        -o-border-radius: 40px ;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
     }
-      
-      .heading {
+
+    .heading {
         display: block;
         color: $primary;
         font-size: 4rem;
         font-weight: 800;
         margin-bottom: 20px;
-      }
-      
-      .form-container .form .input {
+    }
+
+    .form-container .form .input {
         color: $black;
         font-size: 2rem;
         width: 100%;
@@ -486,13 +545,13 @@
         font-weight: bold;
         transition: all 0.2s ease-in-out;
         border-left: 1px solid transparent;
-      }
-      
-      .form-container .form .input:focus {
+    }
+
+    .form-container .form .input:focus {
         border-left: 5px solid $primary;
-      }
-      
-      .form-container .form .textarea {
+    }
+
+    .form-container .form .textarea {
         width: 100%;
         padding: 10px;
         border: none;
@@ -505,18 +564,18 @@
         margin-bottom: 20px;
         border-left: 1px solid transparent;
         transition: all 0.2s ease-in-out;
-      }
-      
-      .form-container .form .textarea:focus {
+    }
+
+    .form-container .form .textarea:focus {
         border-left: 5px solid $primary;
-      }
-      
-      .form-container .form .button-container {
+    }
+
+    .form-container .form .button-container {
         display: flex;
         gap: 10px;
-      }
-      
-      .form-container .form .button-container .send-button {
+    }
+
+    .form-container .form .button-container .send-button {
         flex-basis: 70%;
         background: $primary;
         padding: 10px;
@@ -525,20 +584,20 @@
         text-align: center;
         border: 1px solid transparent;
         transition: all 0.2s ease-in-out;
-      }
-      
-      .form-container .form .button-container .send-button:hover {
+    }
+
+    .form-container .form .button-container .send-button:hover {
         background: transparent;
         border: 1px solid #ff7a01;
         color: #ff7a01;
-      }
-      
-      .form-container .form .button-container .reset-button-container {
+    }
+
+    .form-container .form .button-container .reset-button-container {
         filter: drop-shadow(1px 1px 0px #ff7a01);
         flex-basis: 30%;
-      }
-      
-      .form-container .form .button-container .reset-button-container .reset-button {
+    }
+
+    .form-container .form .button-container .reset-button-container .reset-button {
         position: relative;
         text-align: center;
         padding: 10px;
@@ -548,16 +607,17 @@
         background: $primary-b;
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
         transition: all 0.2s ease-in-out;
-      }
-      
-      .form-container .form .button-container .reset-button-container .reset-button:hover {
+    }
+
+    .form-container .form .button-container .reset-button-container .reset-button:hover {
         background: #ff7a01;
         color: #001925;
-      }
+    }
 }
 
 .amenidades {
     width: 100%;
+
     &__box {
         width: 80%;
         margin: 60px auto;
@@ -566,6 +626,7 @@
         justify-content: center;
         gap: 10px;
         font-size: 2rem;
+
         .div {
             display: flex;
             justify-content: center;
@@ -576,41 +637,49 @@
             min-width: 200px;
             padding: 6px 4px;
             background: #f9feff;
+
             .top {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
                 figure {
                     margin: 4px;
                     width: 90px;
                 }
             }
+
             .bot {
                 text-align: center;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
                 h3 {
                     color: $primary;
                     font-size: 2.2rem;
                 }
+
                 hr {
                     width: 50%;
                     margin: 4px 0 8px 0;
                     border-color: rgba(0, 0, 0, .5);
-                    
+
                 }
             }
         }
-        .div1 { 
+
+        .div1 {
             width: 100%;
             padding: 12px 10px;
             margin: 20px 0;
+
             h2 {
                 font-size: 6rem;
                 text-align: center;
             }
+
             p {
                 width: 40ch;
                 margin: 20px auto;
@@ -619,13 +688,16 @@
             }
         }
     }
+
     &__link-img {
         width: 100%;
+
         figure {
             width: 100%;
         }
     }
 }
+
 // .bio-mp-scree::-webkit-scrollbar {
 //     width: 6px;
 //     height: 6px;
@@ -1006,13 +1078,13 @@
 
 @media screen and (max-width: 1366px) {
     .amenidades {
-        &__box{
+        &__box {
             .div {
                 flex-direction: column;
             }
         }
     }
-  }
+}
 
 // @media screen and (max-width: 768px) {
 //     .amenidades {
