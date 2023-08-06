@@ -1,59 +1,6 @@
 @use 'variables' as *;
 @use 'reset';
 @use 'mobile';
-<<<<<<< HEAD
-
-
-.page_404 {
-    padding: 40px 0;
-    background: #fff;
-    font-family: "Arvo", serif;
-    height: 100vh;
-    img {
-        width: 100%;
-    }
-
-    .four_zero_four_bg {
-        background-image: url(../../assets/img/404.gif);
-        height: 400px;
-        background-position: center;
-
-        h1 {
-            font-size: 80px;
-        }
-
-        h3 {
-            font-size: 80px;
-        }
-    }
-
-    .link_404 {
-        color: #fff !important;
-        padding: 10px 20px;
-        background: #39ac31;
-        margin: 20px 0;
-        display: inline-block;
-        // margin-top: -50px;
-    }
-    .contant_box_404 {
-        h3 {
-            font-size: 4rem;
-        }
-
-        p {
-            font-size: 3rem;
-        }
-
-        a {
-            font-size: 3rem;
-            margin: 6px auto;
-        }
-    }
-}
-
-
-=======
->>>>>>> predeploy
 
 .hide {
     display: none;
@@ -705,8 +652,6 @@
     }
 }
 
-<<<<<<< HEAD
-=======
 .footer {
     width: 100%;
     &__link-img {
@@ -896,7 +841,6 @@
 
 
 
->>>>>>> predeploy
 // .bio-mp-scree::-webkit-scrollbar {
 //     width: 6px;
 //     height: 6px;
@@ -1447,19 +1391,4 @@
             }
         }
     }
-<<<<<<< HEAD
-}
-
-// @media screen and (max-width: 768px) {
-//     .amenidades {
-//         &__box{
-//             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-//             .div {
-//                 flex-direction: column;
-//             }
-//         }
-//     }
-//   }
-=======
   }
->>>>>>> predeploy
