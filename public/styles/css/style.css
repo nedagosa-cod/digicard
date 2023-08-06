@@ -889,6 +889,8 @@ svg {
   box-shadow: 2px 3px 0 2px #d81159;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  text-align: center;
+  outline: none;
 }
 .button.show {
   display: block;
@@ -1355,6 +1357,28 @@ svg {
   }
   .footer__contenido .section:nth-child(1) .redes {
     margin: auto;
+  }
+  .footer .copyright {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 6px;
+  }
+  .footer .copyright div {
+    width: 100%;
+  }
+  .footer .copyright div p {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+  }
+  .footer .copyright div ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 12px;
+    text-align: center;
+  }
+  .footer .copyright div ul li {
+    margin: 0 4px;
   }
 }
 @media screen and (max-width: 1366px) {

@@ -876,6 +876,8 @@
     box-shadow: 2px 3px 0 2px $primary;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    text-align: center;
+    outline: none;
     &.show {
         display: block;
     }
@@ -1372,6 +1374,28 @@
                     }
                     .redes {
                         margin: auto;
+                    }
+                }
+            }
+        }
+        .copyright {
+            flex-direction: column;
+            height: auto;
+            padding: 12px 6px;
+            div {
+                width: 100%;
+                p {
+                    text-align: center;
+                    margin: auto;
+                    width: 60%;
+                }
+                ul {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin: 12px;
+                    text-align: center;
+                    li {
+                        margin: 0 4px;
                     }
                 }
             }
