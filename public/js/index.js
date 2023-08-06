@@ -1,7 +1,11 @@
-// setInterval(()=>{
-//     let lists = document.querySelectorAll('.item');
-//     document.getElementById('slide').appendChild(lists[0]);
-// },8000)
+const toogleCaract = document.querySelectorAll('.btn-toggle')
+
+
+toogleCaract.forEach(el=>{
+    el.addEventListener('click', ()=> {
+        el.parentNode.nextElementSibling.classList.toggle('hide')
+    })
+})
 
 document.getElementById('next').onclick = function(){
     let lists = document.querySelectorAll('.item');
